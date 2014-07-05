@@ -1,0 +1,36 @@
+{
+
+	"sessionServer" : "http://chat.stalk.io:8000",
+
+	"xpushDatabaseConfig": {
+		"host" : "54.199.240.37:27017",
+        "database": "xpush"
+    },
+   "serverUrl" : "http://link.stalk.io:8080",
+   "oauth": {
+    "facebook": {
+      "key": "1410843305852404",
+      "secret": "9553c43e37dad8c115cc9a4cba8006ad" ,
+      "event": {
+        "name": "login-facebook"
+      },
+      "success": "<script>window.close();</script>"
+    },
+    "twitter": {
+      "key": "qTpRdajmnjgXTDZmfOEfJIfdK",
+      "secret": "7kyCbdkIJC5ShGJ4J6SRYG5xsEUAC8k5LthwzFzyt1D82dFw43",
+      "event": {
+        "name": "login-twitter"
+      },
+      "success": "<script>window.close();</script>"
+    },
+    "googleplus": {
+      "key": "266628476939.apps.googleusercontent.com",
+      "secret": "sBKQystDXx1_hhsx9GdWtuit",
+      "event": {
+        "name": "login-google"
+      },
+      "success": "<script>window.close();</script>"
+    }
+  }	
+}

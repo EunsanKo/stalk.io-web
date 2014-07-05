@@ -1,0 +1,35 @@
+{>"layouts/master" /}
+{<body}
+
+
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<h3>with Social Network Service</h3>
+				<p>Those who access your web sites will be able to talk to each other after login with Facebook / Twitter / Google+.</p>
+			</div>
+			<div class="col-lg-9">
+                 <img src="img/stalk/ss001.png" style="max-width: 100%; height: auto;" />
+            </div>
+
+
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3">
+				<h3>for Every Web Browsers</h3>
+                <p>"stalk.io service" works in <strong>IE 6+, chrome, safari and all mobile browsers</strong>. <br/><em>" Cross Browser Compatibility "</em><br/></p>
+                
+            </div>
+			<div class="col-lg-9">
+				<img src="img/stalk/ss002.jpg" style="max-width: 100%; height: auto;" />
+			</div>
+			
+		</div>
+		
+	</div>
+	</section>
+
+{>"footer" /}
+{/body}

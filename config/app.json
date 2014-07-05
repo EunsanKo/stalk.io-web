@@ -1,0 +1,17 @@
+{
+	
+    "databaseConfig": {
+        "host" : "54.199.240.37:27017",
+        "database": "stalk"
+    },
+
+    "bcrypt": {
+        "difficulty": 8
+    },
+
+  "express": {
+     "view engine": null
+  }
+  
+}
+

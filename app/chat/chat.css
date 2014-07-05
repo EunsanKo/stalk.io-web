@@ -1,0 +1,188 @@
+#ChatAppTab > li{
+	text-align: center;
+	width: 50%;
+}
+
+ul > li.message{
+	margin: 20px 0px 0px 0px ;
+}
+
+
+/*
+this is chat source 
+*/
+
+.clearfix:after {
+clear: both;
+content: ".";
+display: block;
+font-size: 0;
+height: 0;
+line-height: 0;
+visibility: hidden;
+}
+
+.panel-body {
+	list-style: none;
+}
+
+.panel-body-chat {
+	overflow-y: scroll;
+	/*height: 350px;*/
+}
+
+.panel-body {
+	padding: 15px;
+}
+
+ol, ul {
+margin-top: 0;
+margin-bottom: 10px;
+}
+.panel-body > li {
+display: list-item;
+}
+
+.from-visitor .chatMsg .msgProfileImg {
+	border-radius: 5px;
+	float: left;
+}
+.from-visitor .chatMsg .msgProfileImg {
+border-radius: 5px;
+float: left;
+}
+.from-visitor .chatMsg .sender {
+float: left;
+}
+.from-visitor .chatMsg .message {
+float: left;
+background: #eee;
+border: 1px solid #ccc;
+}
+
+.from-op .chatMsg .msgProfileImg {
+float: right;
+}
+
+.chatMsg > .msgProfileImg {
+	width: 42px;
+	clear: both;
+	padding: 2px;
+}
+
+
+.from-op .chatMsg .sender {
+float: right;
+display: none;
+}
+
+img {
+vertical-align: middle;
+border : 0;
+}
+
+.from-op .chatMsg .message {
+float: right;
+background: #e7f5f9;
+border: 1px solid #bde4f0;
+}
+
+div.timestamp {
+/* clear: both; */
+text-align: center;
+color: #ccc;
+font-size: 12px;
+}
+
+
+
+.message {
+border-radius: 5px;
+padding: 8px;
+/* clear: both; */
+text-overflow: ellipsis;
+margin-bottom: 8px;
+word-wrap: break-word;
+overflow : hidden;
+}
+
+.message .hidden{
+	display: none;
+}
+.hidden{
+	display: none;
+}
+
+
+.message.active {
+	background-color: #E4F8FF;
+}
+
+#chat-module .chat-body li.message .message-text time{
+	top: 5px;
+	right: 5px;
+}
+
+#conversationTabBar div.close{
+	z-index: 9999;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	padding: 1px 5px;
+	opacity: 1;
+	border: 1px solid black;
+	border-radius: 100px;
+	background-color: white;
+}
+
+
+/**
+	Common
+*/
+.no-padding{
+	padding-left : 0px;
+	padding-right : 0px;
+}
+
+
+/** 
+		top area
+*/
+#activity{
+	padding: 0px;
+	line-height: 0px;
+	height: 32px;
+	width: 32px;
+	margin: 7px 0px 0px 0px;
+}
+
+#activity > img {
+	width : 100%;
+}
+
+/*
+Tab customizing 
+*/
+#conversationTab , #conversationTab>.tab-pane, #conversationTab>.tab-pane>ul{
+	height: 100%;
+}
+
+#ChatAppContent .message:hover{
+	background-color:#ffffff;
+	cursor: pointer;
+}
+
+.chat-body{
+	background: none!important;
+	border-width: 0px;
+}
+
+.online{
+	width : 50px;
+}
+
+#chat-module li.message.message-reply{
+	margin: 0px !important;
+}
+
+

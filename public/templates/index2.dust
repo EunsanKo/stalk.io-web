@@ -1,0 +1,197 @@
+{>"layouts/master" /}
+{<body}
+
+    <!-- end header -->
+	<section id="featured">
+	<!-- start slider -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="img/opcon_front.png" alt="" />
+                <div class="flex-caption">
+                    <h3>stalk.io</h3> 
+					<p>You can install this right where you want it.
+For Wordpress, Tumblr, Blogger and your Any Web Sites</p> 
+					<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+              
+            </ul>
+        </div>
+	<!-- end slider -->
+			</div>
+		</div>
+	</div>	
+
+	</section>
+	<section class="callaction">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="big-cta">
+					<div class="cta-text">
+						<h2><span>stalk.io</span> Live web chat service on your web page</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-bottom">
+								<h4>No Active-X</h4>
+							</div>
+							<div class="box-gray aligncenter">
+								
+								<div class="icon">
+								<i class="fa fa-code fa-3x"></i>
+								</div>
+								<p>
+								 It’s a useful communication tool for your web sites that lets you create free and multi-user live chat with no Active-X and no plugins
+								</p>
+									
+							</div>
+							
+						</div>
+					</div>
+
+
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-bottom">
+								<h4>Responsive</h4>
+							</div>
+							<div class="box-gray aligncenter">
+								
+								<div class="icon">
+								<i class="fa fa-terminal fa-3x"></i>
+								</div>
+								<p>
+								 Anyone who visits the same URL in your web sites can join the chat.
+								</p>
+									
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-bottom">
+								<h4>Customizable</h4>
+							</div>
+							<div class="box-gray aligncenter">
+								
+								<div class="icon">
+								<i class="fa fa-edit fa-3x"></i>
+								</div>
+								<p>
+								Make Customers Happy, One Chat At A Time
+								
+								</p>
+									
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-bottom">
+								<h4>Install</h4>
+							</div>
+							<div class="box-gray aligncenter">
+								
+								<div class="icon">
+								<i class="fa fa-bolt fa-3x"></i>
+								</div>
+								<p>
+								 Very simple installation.<br/>&nbsp;
+								</p>
+									
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		<!-- end divider -->
+		<!-- Portfolio Projects -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Recent Works</h4>
+				<div class="row">
+					<section id="projects">
+					<ul id="thumbs" class="portfolio">
+						<!-- Item Project and Filter Name -->
+						<li class="col-lg-3 design" data-id="id-0" data-type="web">
+						<div class="item-thumbs">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="img/works/1.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</div>
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="img/works/2.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="img/works/3.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="img/works/4.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</section>
+	{>"footer" /}
+{/body}

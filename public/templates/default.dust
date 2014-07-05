@@ -1,0 +1,14 @@
+{>"layouts/master" /}
+{<body}
+	<style>
+	.documents{
+		margin-bottom: 20px;
+	}
+	</style>
+	<div class="container">
+		alksdjflkajsdf
+		alskdjflkajsdf
+		alksdjflkajsd
+	</div>
+
+{/body}

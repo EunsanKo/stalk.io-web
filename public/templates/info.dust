@@ -1,0 +1,212 @@
+{>"layouts/master" /}
+{<body}
+	<style>
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  padding: 20px 10px 0px 10px;
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.inset {
+  padding: 20px;
+}
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+.inset {
+  padding: 15px;
+}
+
+.list-group-item > a{
+    color : #434a54;
+}
+    </style>
+
+	<div class="container" id="wrapper">
+        <div class="col-lg-3" id="sidebar-wrapper">
+            <div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
+                <div class="list-group">
+                    <!--a class="list-group-item list-group-item-info" href="#">{app.url}</a-->
+                    <a class="list-group-item active" href="#">settings</a>
+                    <a class="list-group-item" href="#">dashboard</a>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="col-lg-9" id="page-content-wrapper" role="main">
+			<div class="row">
+<a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+				<h3>{hostname}({app.url})</h3>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+                    <div class="table-responsive">
+                        <!--table class="table table-bordered table-striped">
+                            <tbody>
+                            <form action="delete" id="delForm" method="post">
+                                <input type="hidden" id="deleteId" name="deleteId" value=""/>
+                                <input type="hidden" id="_csrf" name="_csrf" value="{_csrf}"/>
+                            </form>
+                                    <tr>
+                                    <td></td>
+                                    <td>
+                                        <button class="btn btn-default" >Add Operators</button>
+                                    </td>
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table-->
+                        <button class="btn btn-primary" onclick="gotoChat('{app.key}')">Go Chat!</button>
+
+                        <!--button class="btn btn-primary" id="newUrl">New</button-->
+                    </div>
+                 </div>
+			</div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Insert code in your site</h3>
+<pre class="prettyprint linenums">
+&lt;script src="http://www.stalk.io/stalk.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var conf = {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: '{app.key}',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id: 'Page Title',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userId: 'Your Client ID'
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STALK.init(conf);
+&lt;/script&gt;</pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <form action="/delete" id="delForm" method="post">
+                    <input type="hidden" id="deleteId" name="deleteId" value=""/>
+                    <input type="hidden" id="_csrf" name="_csrf" value="{_csrf}"/>
+                </form>
+
+                <div class="col-md-12">
+                    <button class="btn btn-danger" onclick="deleteStalkUser('{app._id}');">Delete</button>
+                </div>
+            </div>
+		</div>
+
+	</div>
+
+	 <script src="/js/stalk/info.js" type="text/javascript"></script>
+
+
+<script>
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+// underscore Dashboard menu
+$('.dashboard').children('a').addClass('current');
+
+</script>
+{/body}

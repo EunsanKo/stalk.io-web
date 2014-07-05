@@ -1,0 +1,117 @@
+{>"layouts/master" /}
+{<body}
+
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('#contact-form').validate(
+	  {
+	    rules: {
+	      email: {
+	        required: true,
+	        email: true
+	      },
+	      name: {
+	        required: true
+	      },	      
+	      password: {
+	      	minlength: 4,
+	        required: true
+	      },
+	      repassword: {
+	      	minlength: 4,
+	        required: true
+	      }	      
+	    },
+			errorElement: "em",
+	    highlight: function(element) {
+	      $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+	    },
+	    success: function(element) {
+	      $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+	    },
+			submitHandler: function(form) {
+				form.submit();
+  		}
+	  });
+	});
+</script>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-offset-4 col-lg-4">
+					<h3>Now we’re talking!</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-4 col-lg-4">
+					<form id="contact-form" action="/signup" method="post">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Fill your inforamtion</h3>
+							</div>
+						  <div class="panel-body">
+								<div class="form-group">
+			          	{?messages}
+			          		<div class="alert alert-danger">
+											<ul>
+												{#messages}
+													{.}
+												{/messages}
+				              </ul>
+			          		</div>
+			          	{/messages}	
+								</div>						  
+						  	<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group has-feedback">
+											<label class="control-label" for="email">Email</label>
+											<input type="text" name="email" class="form-control" placeholder="* Enter your email address" />
+											<span class="glyphicon form-control-feedback"></span>
+										</div>
+									</div>									
+								</div>
+						  	<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group has-feedback">
+											<label class="control-label" for="name">Name</label>
+											<input type="text" name="name" id="name" class="form-control" placeholder="* Enter your name" />
+											<span class="glyphicon form-control-feedback"></span>
+										</div>											
+									</div>
+								</div>					
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group has-feedback">
+											<label class="control-label" for="password">Secret Password</label>									
+											<input type="password" name="password" id="password" class="form-control" placeholder="* Enter your super secret password" />
+											<span class="glyphicon form-control-feedback"></span>
+										</div>											
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group has-feedback">
+											<label class="control-label" for="repassword">Secret Password</label>										
+											<input type="password" name="repassword" id="repassword" class="form-control" placeholder="* Re enter your password" />
+											<span class="glyphicon form-control-feedback"></span>
+										</div>											
+									</div>
+								</div>							
+								<div class="row">
+									<div class="col-lg-offset-4 col-lg-4">
+										<input type="hidden" name="_csrf" value="{_csrf}"/>
+										<button type="submit" id="saveBtn" class="btn btn-warning btn-block">Save</button>
+									</div>
+								</div>
+							</div> <!-- panal-body -->
+						</div> <!-- panel -->
+					</form>
+				</div>
+			</div> <!-- row -->
+		</div> <!-- col-lg-12 -->
+	</div> <!-- row -->
+</div> <!-- example -->
+{/body}

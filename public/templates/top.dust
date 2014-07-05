@@ -1,0 +1,41 @@
+<section id="header" class="appear"></section>
+    <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+       <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="fa fa-bars color-white"></span>
+          </button>
+          <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">      stalk.io
+          </a></h1>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="navtop nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#section-feature">Features</a></li>
+            <li><a href="/#section-install">Install</a></li>
+            <li><a href="/#section-about">About</a></li>
+            <li><a href="/#section-contact">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Drafts</a></li>
+                    <li><a href="#">Sent Items</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Trash</a></li>
+                </ul>
+            </li>
+
+
+
+            {?user}
+              <li><a href="/info">Info</a></li>
+              <li><a href="/logout">Logout</a></li>
+           {:else}
+              <li><a href="/signup" class="header_nav_button_cta">Sign Up</a></li>
+              <li><a href="/login" class="header_nav_button">LOGIN</a></li>
+           {/user}
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>

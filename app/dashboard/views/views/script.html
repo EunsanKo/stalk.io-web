@@ -1,0 +1,142 @@
+<div class="col-sm-12">
+			<div class="row">
+<h2 class="row-seperator-header"><i class="fa fa-warning"></i> Insert code in your site </h2>
+<pre class="prettyprint linenums">
+&lt;script src="http://www.stalk.io/stalk.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var conf = {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: '{{app.key}}',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id: 'Page Title',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userId: 'Your Client ID'
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STALK.init(conf);
+&lt;/script&gt;</pre>
+
+		</div>
+	</div>
+
+<div class="col-sm-12">
+			<div class="row">
+<h2 class="row-seperator-header"><i class="fa fa-warning"></i> Some Example </h2>
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<ul id="myTab1" class="nav nav-tabs bordered">
+						<li class="active">
+							<a data-target="#tistory" data-toggle="tab">Tistory</a>
+						</li>
+						<li>
+							<a data-target="#s2" data-toggle="tab">Tistory</a>
+						</li>
+						<li>
+							<a data-target="#s2" data-toggle="tab">Cafe24</a>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Others <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a data-target="#s3" data-toggle="tab">Site</a>
+								</li>
+								<li>
+									<a data-target="#s4" data-toggle="tab">Wordpress</a>
+								</li>
+							</ul>
+						</li>
+						<li class="pull-right">
+							<a href="javascript:void(0);">
+							<div class="sparkline txt-color-pinkDark text-align-right" data-sparkline-height="18px" data-sparkline-width="90px" data-sparkline-barwidth="7"><canvas width="52" height="18" style="display: inline-block; width: 52px; height: 18px; vertical-align: top;"></canvas></div> </a>
+						</li>
+					</ul>	
+					<div id="myTabContent1" class="tab-content padding-10">
+						<div class="tab-pane fade in active" id="tistory">
+							<p>
+						<div class="row">
+							<form id="wizard-1" novalidate="novalidate">
+								<div id="bootstrap-wizard-1" class="col-sm-12">
+									<div class="form-bootstrapWizard">
+										<ul class="bootstrapWizard form-wizard">
+											<li class="active" data-target="#step1">
+												<a data-target="#tab1" data-toggle="tab"> <span class="step">1</span> <span class="title">Basic information</span> </a>
+											</li>
+											<li data-target="#step2">
+												<a data-target="#tab2" data-toggle="tab"> <span class="step">2</span> <span class="title">Billing information</span> </a>
+											</li>
+											<li data-target="#step3">
+												<a data-target="#tab3" data-toggle="tab"> <span class="step">3</span> <span class="title">Billing information</span> </a>
+											</li>
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab1">
+											<br>
+											<h3><strong>Step 1 </strong> - Basic Information</h3>
+											<img src="/img/script/tistory/xpush.io-tistory1.png"></img>
+										</div>
+										<div class="tab-pane" id="tab2">
+											<br>
+											<h3><strong>Step 2</strong> - Billing Information</h3>
+											<img src="/img/script/tistory/xpush.io-tistory2.png"></img>											
+										</div>
+										<div class="tab-pane" id="tab3">
+											<br>
+											<h3><strong>Step 3</strong> - Domain Setup</h3>
+											<img src="/img/script/tistory/xpush.io-tistory3.png"></img>											
+										</div>
+										<div class="tab-pane" id="tab4">
+											<br>
+											<h3><strong>Step 4</strong> - Save Form</h3>
+										</div>
+
+										<div class="form-actions">
+											<div class="row">
+												<div class="col-sm-12">
+													<ul class="pager wizard no-margin">
+														<!--<li class="previous first disabled">
+														<a href="javascript:void(0);" class="btn btn-lg btn-default"> First </a>
+														</li>-->
+														<li class="previous disabled">
+															<a href="javascript:void(0);" class="btn btn-lg btn-default"> Previous </a>
+														</li>
+														<!--<li class="next last">
+														<a href="javascript:void(0);" class="btn btn-lg btn-primary"> Last </a>
+														</li>-->
+														<li class="next">
+															<a href="javascript:void(0);" class="btn btn-lg txt-color-darken"> Next </a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</form>
+						</div>								
+							</p>
+						</div>
+						<div class="tab-pane fade" id="s2">
+							<p>
+							</p>
+						</div>
+						<div class="tab-pane fade" id="s3">
+							<p>
+							</p>
+						</div>
+						<div class="tab-pane fade" id="s4">
+							<p>
+							</p>
+						</div>
+					</div>									
+				</div>
+
+			</div>
+</div>
+
+
+<script type="text/javascript" src="bower_components/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+<script type="text/javascript">
+      $('.btnCreateNewSite').click(function(){
+        $('#mdlCreateNewSite').modal('show');
+      });
+
+	//$('#bootstrap-wizard-1').bootstrapWizard();
+</script>

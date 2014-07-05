@@ -1,0 +1,128 @@
+{>"layouts/master-main" /}
+{<body}
+    <div class="psd-download">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h2>Overview</h2>
+            <p class="infos">We love the new graphic design trend, and Bootflat UI Kit is a kind of style. Simple, rich and colorful and graphic design of components of the UI almost any project is perfect, from the complex Web applications and small start-up project website, and follow the Bootflat Frame update.</p>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4"><img src="img/fast.png" /></div>
+                  <div class="col-md-8">
+                    <h4>Save your time</h4>
+                    <p>Don't waste your time on the composition of the same. Use your time to develop new ideas and projects.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4"><img src="img/design.png" /></div>
+                  <div class="col-md-8">
+                    <h4>Elaborate design</h4>
+                    <p>All the components are independent, easy to be integrated into the design and layout of any project.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4"><img src="img/together.png" /></div>
+                  <div class="col-md-8">
+                    <h4>Components fit together</h4>
+                    <p>All components to use the same style. You can easily apply them in the design projects of various.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 clearfix">
+                <div class="row">
+                  <div class="col-md-4"><img src="img/prototyping.png" /></div>
+                  <div class="col-md-8">
+                    <h4>Fast prototyping</h4>
+                    <p>You will be able to quickly develop high-quality prototypes in full-color. Your clients will appreciate prototypes with beautiful components.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="developers" class="previews">
+      <div class="container">
+        <h2>Developers</h2>
+        <p>Developer who subconsciously views himself as an artist will enjoy what he does and will do it better. </p>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img class="img-rounded" src="/img/team/johnkim.jpg" >
+                <div class="caption text-center">
+                  <h3>John Kim</h3>
+                  <div class="social-developer">
+                    <a title="Twitter" href="https://twitter.com/flathemes" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe121"></i></a>&nbsp;&nbsp;
+                    <a title="Google+" href="https://plus.google.com/u/0/" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe110"></i></a>&nbsp;&nbsp;
+                    <a title="Facebook" href="https://www.facebook.com/JohnKim0331" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10b"></i></a>&nbsp;&nbsp;
+                    <a title="Github" href="https://github.com/JohnKim" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10e"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img class="img-rounded" src="/img/team/johnko.jpg">
+                <div class="caption text-center">
+                  <h3>John Ko</h3>
+                  <div class="social-developer">
+                    <a title="Facebook" href="https://www.facebook.com/john.ko.54" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10b"></i></a>&nbsp;&nbsp;
+                    <a title="Github" href="https://github.com/EunsanKo" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10e"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img class="img-rounded" src="/img/team/luffy.jpg">
+                <div class="caption text-center">
+                  <h3>James</h3>
+                  <div class="social-developer">
+                    <a title="Facebook" href="https://www.facebook.com/jung.jinyung.9" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10b"></i></a>&nbsp;&nbsp;
+                    <a title="Github" href="https://github.com/0nlyoung7" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10e"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img class="img-rounded" src="/img/team/notdol.jpg">
+                <div class="caption text-center">
+                  <h3>Notdol</h3>
+                  <div class="social-developer">
+                    <a title="Facebook" href="https://www.facebook.com/notdol" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10b"></i></a>&nbsp;&nbsp;
+                    <a title="Github" href="https://github.com/notdol" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10e"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      
+    </div>
+    <div id="contact" class="previews">
+      <div class="container">
+        <h2>Contact Us</h2>
+        
+      </div>
+      <div class="container">
+        <h2>Thanks for watching!</h2>
+        <p>I hope you will enjoy this new product, and if you use it, do not forget to share your projects with us. I love to see all the great things you are working on!.....</p>
+      </div>
+
+    </div>
+
+
+{/body}

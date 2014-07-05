@@ -1,0 +1,208 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+/**======================================================== Chat Controller
+**/
+#ChatAppTab > li{
+  text-align: center;
+  width: 50%;
+}
+
+ul > li.message{
+  margin: 20px 0px 0px 0px ;
+}
+
+
+/*
+this is chat source 
+*/
+
+.clearfix:after {
+clear: both;
+content: ".";
+display: block;
+font-size: 0;
+height: 0;
+line-height: 0;
+visibility: hidden;
+}
+
+.panel-body {
+  list-style: none;
+}
+
+.panel-body-chat {
+  overflow-y: scroll;
+  /*height: 350px;*/
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+ol, ul {
+margin-top: 0;
+margin-bottom: 10px;
+}
+.panel-body > li {
+display: list-item;
+}
+
+.from-visitor .chatMsg .msgProfileImg {
+  border-radius: 5px;
+  float: left;
+}
+.from-visitor .chatMsg .msgProfileImg {
+border-radius: 5px;
+float: left;
+}
+.from-visitor .chatMsg .sender {
+float: left;
+}
+.from-visitor .chatMsg .message {
+float: left;
+background: #eee;
+border: 1px solid #ccc;
+}
+
+.from-op .chatMsg .msgProfileImg {
+float: right;
+}
+
+.chatMsg > .msgProfileImg {
+  width: 42px;
+  clear: both;
+  padding: 2px;
+}
+
+
+.from-op .chatMsg .sender {
+float: right;
+display: none;
+}
+
+img {
+vertical-align: middle;
+border : 0;
+}
+
+.from-op .chatMsg .message {
+float: right;
+background: #e7f5f9;
+border: 1px solid #bde4f0;
+}
+
+div.timestamp {
+/* clear: both; */
+text-align: center;
+color: #ccc;
+font-size: 12px;
+}
+
+
+
+.message {
+border-radius: 5px;
+padding: 8px;
+/* clear: both; */
+max-width: 300px;
+text-overflow: ellipsis;
+overflow-x: hidden;
+margin-bottom: 8px;
+word-wrap: break-word;
+}
+
+
+/*
+Tab customizing 
+*/
+
+#conversationTabBar{
+  display: none;
+}
+
+#conversationTab , #conversationTab>.tab-pane, #conversationTab>.tab-pane>ul{
+  height: 100%;
+}
+
+
+
+

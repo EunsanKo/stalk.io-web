@@ -1,0 +1,87 @@
+{>"layouts/master" /}
+{<body}
+
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('#contact-form').validate(
+	  {
+	    rules: {
+	      username: {
+	        required: true,
+	        email: true
+	      },
+	      password: {
+	      	minlength: 4,
+	        required: true
+	      }
+	    },
+			errorElement: "em",
+	    highlight: function(element) {
+	      $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+	    },
+	    success: function(element) {
+	      $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+	    },
+			submitHandler: function(form) {
+				form.submit();
+  		}
+	  });
+	});
+</script>
+
+<style type="text/css">
+	.login-panel {
+		background-color: #fff;
+		border-color: #e6e9ed;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		margin-bottom: 20px;
+		background-color: #fff;
+		border: 1px solid #e6e9ed;		
+	}
+</style>
+
+<link rel="stylesheet" href="/css/bootstrap-social.css">
+<link rel="stylesheet" href="/css/font-awesome.css">
+
+<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h3>Sign in</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 ">
+					<form id="contact-form" action="/login" method="post">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4>Sign in with Social</h4>
+							</div>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<a href="/auth/facebook" class="btn btn-block btn-social btn-lg btn-facebook">
+    									<i class="fa fa-facebook"></i> Sign in with Facebook
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="/auth/twitter" class="btn btn-block btn-social btn-lg btn-twitter">
+    									<i class="fa fa-twitter"></i> Sign in with twitter
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="/auth/google" class="btn btn-block btn-social btn-lg btn-google-plus">
+    									<i class="fa fa-google-plus"></i> Sign in with Google
+									</a>
+								</li>															
+							</ul>
+						</div> <!-- panel -->
+					</form>
+				</div>
+			</div> <!-- row -->
+</div> <!-- example -->
+{/body}

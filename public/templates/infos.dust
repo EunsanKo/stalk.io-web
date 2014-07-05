@@ -1,0 +1,45 @@
+{>"layouts/master" /}
+{<body}
+<div class="container">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-3"></div>
+		<div class="col-md-3"></div>
+		<div class="col-md-3">
+            <button type="button" class="btn btn-success btn-block btnCreateNewSite">Create Site</button>
+        </div>		
+	</div>
+	<br />
+		<ul class="media-list">
+    {?apps}
+        {#apps}
+		<li class="media">
+			<a class="pull-left" href="/info/{name}/settings"><img class="media-object img-rounded" src="/img/apps.png"></a>
+			<div class="media-body">
+	          <h4 class="media-heading">{name}</h4>
+				<p>Site address : {url}</p>
+	        </div>
+		</li>
+		<!--div class="col-sm-12 col-md-12">
+			<div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">{name}</h3>
+              </div>
+              <div class="panel-body">
+				<p>Site address : {url}</p>
+              </div>
+            </div>			
+		</div-->
+
+		{/apps}
+	{/apps}
+		</ul>
+</div>
+<script>
+      $('.btnCreateNewSite').click(function(){
+        $('#mdlCreateNewSite').modal('show');
+      });
+// underscore Dashboard menu
+$('.dashboard').children('a').addClass('current');
+</script>
+{/body}

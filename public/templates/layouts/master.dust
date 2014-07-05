@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>STALK.IO :: real live conversations with visitors </title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- SmartAddon.com Verification for stalk.io --> 
+    <meta name="smartaddon-verification" content="211fa07fbd5ca833b4cfd48c462138a9" />
+       <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/> 
+    <!-- site css -->
+    <link rel="stylesheet" href="/css/site.min.css">
+    <link rel="stylesheet" href="/css/stalk-page.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+        <script type="text/javascript" src="/js/site.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.tmpl.min.js"></script>
+  </head>
+  <body>
+
+    <div class="docs-header">
+      <!--nav-->
+      <nav class="navbar navbar-default navbar-custom" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="/img/logo.png" height="40"></a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="nav-link" href="/#features">Features</a></li>
+              <li><a class="nav-link" href="/#services">Services</a></li>
+              <li><a class="nav-link" href="/#developers">Developers</a></li>
+              <li><a class="nav-link" href="/#contact">Contact</a></li>
+                {?user}
+                <li class="dropdown dashboard">
+	            <a class="nav-link {@ne key="loginPage" value="true"}current{/ne}" href="/infos">Dashboard</a>
+                    <!--a href="/infos" data-toggle="dropdown" class="dropdown-toggle">Dashboard<b class="caret"></b></a-->
+			
+                    <!--ul class="dropdown-menu">
+                        <li><a href="#" id="btnCreateNewSite" >Create Site</a></li>
+                        <li class="divider"></li>
+                        {?apps}
+                            {#apps}
+                        <li><a href="/info/{name}/settings">{name}</a></li>
+                            {/apps}
+                        {/apps}
+                    </ul-->
+                </li>
+                <script>
+                  $('#btnCreateNewSite').click(function(){
+                    $('#mdlCreateNewSite').modal('show');
+                  });
+                </script>
+                  <li class="dropdown">              
+                    <a href="#" class="dropdown-toggle profile" data-toggle="dropdown">
+                      <img src="{user.picture}" style="width:32px;height:32px;" />
+                      <span class="headerTinymanName">{user.name}</span>
+                      <b class="caret"></b>
+                      <ul class="dropdown-menu">
+                        <li><a href="/logout">Log Out</a></li>
+                      </ul>
+                    </a>              
+                  </li>
+                {:else}
+                  	<li><a class="nav-link {?loginPage}current{/loginPage}" href="/login">LOG IN</a></li>
+                {/user}
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    {+body /}
+    {>"layouts/common-footer" /}
+    
+
+{?user}
+    <div class="modal fade" id="mdlCreateNewSite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+           
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Regist New Site</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                    <div class="col-xs-12">
+                        <label>Display Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="The name of your site.">
+                    </div>                    
+                    <div class="col-xs-12">
+                        <label>Site Url</label>
+                        <input type="text" class="form-control" id="url" name="url" placeholder="The site address of your domain or ip.">
+                    </div>                    
+                    </div>
+                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveBtn">Create Site</button>
+                </div>
+            </div>
+            
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <script>
+    $('#saveBtn').click(function(){
+        var url = $('#url').val();
+        var name = $('#name').val();
+        
+        $.post("/regist"
+        , {'app':url,'url' : url,
+        'name': name, _csrf:$("#_csrf").val()}
+        , function(result) {
+            
+            if(result.msg == "ok"){
+                alert("Success Saved");
+                document.location.href='/info/'+name+'/settings'
+            }else {
+                alert("Fail");
+                
+            }
+        });
+        
+    });
+
+    </script>
+{/user}
+
+
+
+  </body>
+</html>
+
+
